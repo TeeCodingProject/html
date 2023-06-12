@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนแสดงความเห็น</title>
+</head>
+<body>
+    <h1 align ="center">แบบฟอร์ม</h1>
+    <hr>
+    <form align ="center"  >
+        <div>
+            <label for="FristName">Name</label>
+            <input type="Text"name="Fname" placeholder="ป้อนชื่อจริงของคุณ"require>
+            <!-- placeholder ใช้สำหรับอธิบายว่าช่องั้นต้องกรอกอย่างไร -->
+        </div>
+        <div> 
+            <label for="SurName">SurName</label>
+            <input type="text" placeholder="ป้อนนามสกุลของคุณ"require>
+        </div> 
+        <div> 
+            <label for="email">Email</label>
+            <input type="email" name="Email" placeholder="ป้อนอีเมลของคุณ"require>
+        </div>
+        <div> 
+            <label for="">ที่อยู่</label>
+            <input type="addess" name="addess" placeholder="ที่อยู่">
+        </div>
+        <div> 
+            <label for="">อายุ</label>
+            <input type="number" name="age" placeholder="กรุณากรอกอายุเป็นตัวเลข" min="3"max="60"Value="3">
+        </div>
+        <div> 
+            <label for="">วันเกิด</label>
+            <input type="date" name="birtdate">
+        </div>               
+        <div> 
+            <label for="">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel">
+        </div>
+        <div> <!--หัวข้อนี้สำหรับการ select-->
+            <label for="education">ระดับการศึกษา</label> 
+                <select name="edu" id="">
+                    <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                    <option value="ปริญญาตรี">ปริญญาตรี</option>
+                    <option value="ปริญญาโท">ปริญญาโท</option>
+                </select>
+        </div>
+        <div>
+            <label for="file">แนบไฟล์</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="file">เว็บของคุณ</label>
+            <input type="url">
+        </div>
+       <!-- div ไว้ส่วนนั้นๆเพื่อแยกสิ่งที่เราต้องการจะสื่อออกมาเป็นอันๆ -->   
+       <!-- เราสามารถกำหนด Value ได้เลยผ่าน Value="" -->
+       <!-- ยังมีอื่นๆอีกมากายแต่ไม่ได้เอามาลงนะมันเยอะ --> 
+       <div>
+            <input type="submit">บันทึกข้อมูล
+       </div> 
+       <!-- ปุ่ม Sudmit -->
+       <!-- เรายังสามารถใช้ require เพื่อทำให้เราจำเป็นต้องกรอกข้อมูลนั้นๆได้ -->
+       <!-- และสามารถใช้ readonly เพื่อบังคับให้อ่านได้อย่างเดียว -->
+    </form>
+</body>
+</html>
